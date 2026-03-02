@@ -280,25 +280,4 @@ The platform will integrate multiple data sources, process them in real-time and
 
 This project will establish a scalable and intelligent data platform for Soudah Peaks, enabling data-driven decisions across business functions. By leveraging Snowflake and modern data engineering practices, the platform will support real-time analytics, operational efficiency, and enhanced guest experiences.
 
-
-erDiagram
-  GUEST ||--o{ BOOKING : makes
-  BOOKING ||--o{ PAYMENT : has
-  BOOKING }o--|| CHANNEL : sourced_from
-  BOOKING }o--|| RATE_PLAN : priced_by
-  BOOKING ||--o{ STAY : materializes_as
-
-  PROPERTY ||--o{ ROOM : contains
-  ROOM ||--o{ STAY : assigned_to
-
-  STAY ||--o{ HOUSEKEEPING_TASK : generates
-  PROPERTY ||--o{ MAINTENANCE_TICKET : receives
-
-  GUEST ||--o{ POS_TXN : spends
-  PROPERTY ||--o{ POS_TXN : occurs_at
-
-  ACTIVITY ||--o{ ACTIVITY_BOOKING : booked_as
-  GUEST ||--o{ ACTIVITY_BOOKING : participates
-  STAY ||--o{ ACTIVITY_BOOKING : during
-
 ---
