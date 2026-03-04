@@ -1,0 +1,10 @@
+# schemachange-config.yml
+snowflake-account: "YNXFYXC-IL57355"     # e.g. xy12345.ap-south-1.aws
+snowflake-user: "MRUTYUNJAYA.SAHOO"
+snowflake-role: "SYSADMIN"
+snowflake-warehouse: "COMPUTE_WH"
+snowflake-database: "SOUDAH_DB"
+snowflake-schema: "UTIL"
+change-history-table: "SOUDAH_DB.UTIL.SCHEMACHANGE_HISTORY"
+create-change-history-table: true
+root-folder: "migrations"

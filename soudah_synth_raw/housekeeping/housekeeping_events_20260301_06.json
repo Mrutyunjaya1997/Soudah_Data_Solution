@@ -1,0 +1,1 @@
+{"event_id": "evt-76960427", "task_id": "hk-146878", "event_time_raw": "2026/03/18 15:58", "property_code": "SP01", "room_code": "DLX-145", "status": "ASSIGNED", "staff_id_raw": "stf-0186", "priority_raw": "M", "notes": "urgent", "payload": {"source": "housekeeping_app", "device": "web", "version": "2.0.1"}}

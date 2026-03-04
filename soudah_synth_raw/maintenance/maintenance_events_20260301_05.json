@@ -1,0 +1,1 @@
+{"event_id": "m_evt_33713130", "ticket_id": "MT-937145", "event_time_raw": "2026-02-19 00:55:00", "property_code": "SOUDAH_1", "asset_tag": "BOILER-02", "severity_raw": "Medium", "status_raw": "CLOSED", "issue_text": "Temperature spike", "downtime_minutes_raw": "131", "payload": {"source": "maintenance_system", "technician_notes": ""}}
