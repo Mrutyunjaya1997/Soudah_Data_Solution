@@ -106,6 +106,46 @@ Point-of-sale transactions (restaurants, spa, retail).
 | LOAD_TS | Load timestamp |
 
 ---
+## HOUSEKEEPING_EVENTS_RAW
+
+Housekeeping operational events.
+
+| Column | Description |
+|------|------|
+| EVENT_ID | Event identifier |
+| TASK_ID | Housekeeping task identifier |
+| EVENT_TIME_RAW | Event timestamp |
+| PROPERTY_CODE | Property code |
+| ROOM_CODE | Room identifier |
+| STATUS | Task status |
+| STAFF_ID_RAW | Housekeeping staff ID |
+| PRIORITY_RAW | Task priority |
+| NOTES | Additional notes |
+| PAYLOAD | JSON payload |
+| SRC_FILENAME | Source filename |
+| LOAD_TS | Load timestamp |
+
+---
+
+## MAINTENANCE_EVENTS_RAW
+
+Maintenance operations events.
+
+| Column | Description |
+|------|------|
+| EVENT_ID | Event identifier |
+| TICKET_ID | Maintenance ticket |
+| EVENT_TIME_RAW | Event timestamp |
+| PROPERTY_CODE | Property code |
+| ASSET_TAG | Asset identifier |
+| SEVERITY_RAW | Severity level |
+| STATUS_RAW | Ticket status |
+| ISSUE_TEXT | Issue description |
+| DOWNTIME_MINUTES_RAW | Raw downtime duration |
+| PAYLOAD | JSON payload |
+| SRC_FILENAME | Source filename |
+| LOAD_TS | Load timestamp |
+"""
 
 # 2. Silver Layer (Cleaned Data)
 
