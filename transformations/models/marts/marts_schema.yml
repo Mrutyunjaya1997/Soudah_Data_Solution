@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_key
+        tests: [not_null, unique]
+
+  - name: dim_property
+    columns:
+      - name: property_key
+        tests: [not_null, unique]
+
+  - name: dim_guest
+    columns:
+      - name: guest_key
+        tests: [not_null, unique]
+
+  - name: dim_channel
+    columns:
+      - name: channel_key
+        tests: [not_null, unique]
+
+  - name: dim_room
+    columns:
+      - name: room_key
+        tests: [not_null, unique]
+
+  - name: fact_bookings
+    columns:
+      - name: booking_key
+        tests: [not_null, unique]
+
+  - name: fact_payments
+    columns:
+      - name: payment_key
+        tests: [not_null, unique]
+
+  - name: fact_pos_txn
+    columns:
+      - name: pos_txn_key
+        tests: [not_null, unique]
+
+  - name: fact_housekeeping_tasks
+    columns:
+      - name: housekeeping_task_key
+        tests: [not_null, unique]
+
+  - name: fact_maintenance_tickets
+    columns:
+      - name: maintenance_ticket_key
+        tests: [not_null, unique]
