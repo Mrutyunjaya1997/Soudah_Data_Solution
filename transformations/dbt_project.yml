@@ -1,0 +1,23 @@
+name: "soudah_data_solution"
+version: "1.0.0"
+config-version: 2
+
+profile: "transformations"
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  soudah_data_solution:
+    staging:
+      +schema: SILVER
+      +materialized: view
+    intermediate:
+      +schema: SILVER
+      +materialized: table
+    marts:
+      +schema: GOLD
+      +materialized: table

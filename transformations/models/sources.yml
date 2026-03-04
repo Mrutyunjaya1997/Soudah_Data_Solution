@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: SOUDAH_DB
+    schema: BRONZE
+    tables:
+      - name: BOOKINGS_RAW
+      - name: PAYMENTS_RAW
+      - name: POS_TXN_RAW
+      - name: HOUSEKEEPING_EVENTS_RAW
+      - name: MAINTENANCE_EVENTS_RAW
