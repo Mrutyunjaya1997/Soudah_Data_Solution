@@ -182,7 +182,7 @@ ORDER BY load_ts DESC
 
 ---
 
-## Silver Staging Tables
+## Silver Staging Views
 
 | Table | Description |
 |------|------|
@@ -348,8 +348,6 @@ average(resolution_minutes)
 
 # Final Architecture
 
-MINIO / SOURCE FILES  
-↓  
 SNOWFLAKE STAGE  
 ↓  
 BRONZE (Raw ingestion)  
@@ -370,7 +368,6 @@ STREAMLIT DASHBOARD
 |------|------|
 | Data Warehouse | Snowflake |
 | Transformation | dbt |
-| Storage | MinIO |
 | Orchestration | Snowflake Tasks / dbt |
 | Analytics | Streamlit |
 | Modeling | Star Schema |
