@@ -10,4 +10,14 @@ transformations:
       type: snowflake
       user: MRUTYUNJAYA.SAHOO
       warehouse: COMPUTE_WH
+    dev_2:
+      account: FNTORVO-VYC06522
+      database: SOUDAH_DB
+      password: MJ@snowflake2026
+      role: SYSADMIN
+      schema: UTIL
+      threads: 1
+      type: snowflake
+      user: MRUTYUNJAYA.SAHOO
+      warehouse: COMPUTE_WH
   target: dev
